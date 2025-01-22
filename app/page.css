@@ -1,0 +1,86 @@
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 210mm;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.chapter {
+  margin-bottom: 2rem;
+  break-after: page;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+@page {
+  size: A4;
+  margin: 20mm;
+  background-color: white;
+  @top-center {
+    content: string(chapter);
+    font-size: 0.8rem;
+    color: #888;
+  }
+  @bottom-center {
+    content: counter(page);
+    font-size: 0.8rem;
+    color: #888;
+  }
+}
+
+h1,
+h2 {
+  string-set: chapter content(text);
+}
+
+@media screen {
+  .pagedjs_pages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagedjs_page {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+
+  .App {
+    padding: 0;
+  }
+
+  .chapter {
+    page-break-after: always;
+  }
+}
+
