@@ -14,7 +14,7 @@ body {
 
 .chapter {
   margin-bottom: 2rem;
-  break-after: page;
+  /*break-after: page;*/
 }
 
 h1 {
@@ -36,9 +36,10 @@ p {
 }
 
 @page {
-  size: A4;
+  size: A5;
   margin: 20mm;
   background-color: white;
+  
   @top-center {
     content: string(chapter);
     font-size: 0.8rem;
@@ -81,7 +82,7 @@ h2 {
   }
 
   .chapter {
-    page-break-after: always;
+    /*page-break-after: always;*/
   }
 }
 
