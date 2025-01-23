@@ -20,6 +20,7 @@ export default function Home() {
     <div className="App" ref={appRef}>
       <section className="chapter" id="introduction">
         <h1>Welcome to Our Multi-Page Document</h1>
+        <input name="search" type="search" placeholder="Search this document" />
         <p>This document demonstrates the use of PagedJS to create a multi-page layout. Each section below represents a different chapter or topic.</p>
       </section>
 
