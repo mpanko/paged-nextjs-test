@@ -1,4 +1,4 @@
-h1 {
+/*h1 {
   font-size: 2.5rem;
   color: #333;
   margin-bottom: 1rem;
@@ -6,7 +6,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  color: pink;
+  color: black;
   margin-bottom: 1rem;
 }
 
@@ -14,29 +14,30 @@ p {
   font-size: 1rem;
   color: #666;
   margin-bottom: 1rem;
-}
+}*/
 
 @page {
-  size: A4 landscape;
-  margin: 10mm;
-  background-color: yellow;
+  size: A5 landscape;
+  margin: 7mm;
+  background-color: white;
   
-  @top-center {
+  /*@top-center {
     content: string(chapter);
     font-size: 0.8rem;
     color: #888;
-  }
+  }*/
+
   @bottom-center {
     content: counter(page);
     font-size: 0.8rem;
     color: gray;
   }
 }
-
+/*
 h1,
 h2 {
   string-set: chapter content(text);
-}
+}*/
 
 /* screen only styles */
 @media screen, pagedjs-ignore {
@@ -56,7 +57,6 @@ h2 {
 }
 
 
-
 .two-column-layout {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,20 +65,20 @@ h2 {
 
 #introduction {
   grid-column: 1 / span 2;
-  background-color: red;
+  background-color: lightcoral;
 }
 
 #chapter1 {
   grid-column: 1;
-  background-color: green;
+  background-color: lightgreen;
 }
 
 #chapter2 {
   grid-column: 2;
-  background-color: blue;
+  background-color: lightskyblue;
 }
 
 .chapter {
   
-  
+  border: red solid 1px;
 }
