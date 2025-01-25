@@ -25,8 +25,15 @@ export default function Home() {
       </section>
 
       <div className="two-column-layout">
+      <section className="chapter" id="introduction">
+        <h1>Welcome to Our Multi-Page Document</h1>
+        <input name="search" type="search" placeholder="Search this document" />
+        <p>This document demonstrates the use of PagedJS to create a multi-page layout. Each section below represents a different chapter or topic.</p>
+      </section>
+
         <div className="chapter" id="chapter1">
           <h2>Chapter 1: Foundations</h2>
+          {/* Chapter 1 content */}
           <p>1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p>2 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
           <p>3 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -41,6 +48,7 @@ export default function Home() {
 
         <div className="chapter" id="chapter2">
           <h2>Chapter 2: Advanced Concepts</h2>
+          {/* Chapter 2 content */}
           <p>1 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
           <p>2 Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
           <p>3 Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
@@ -51,6 +59,8 @@ export default function Home() {
           <p>8 Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.</p>
           <p>9 Et harum quidem rerum facilis est et expedita distinctio nam libero tempore. Et harum quidem rerum facilis est et expedita distinctio nam libero tempore.</p>
           <p>10 Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
+          <p>11 Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
+          <p>12 Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores.</p>
         </div>
       </div>
     </div>
