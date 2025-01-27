@@ -1,31 +1,13 @@
-/*h1 {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-h2 {
-  font-size: 2rem;
-  color: black;
-  margin-bottom: 1rem;
-}
-
-p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 1rem;
-}*/
-
 @page {
-  size: A4 landscape;
+  size: A5 landscape;
   margin: 7mm;
   background-color: white;
-  
-  /*@top-center {
+
+  @top-center {
     content: string(chapter);
     font-size: 0.8rem;
     color: #888;
-  }*/
+  }
 
   @bottom-center {
     content: counter(page);
@@ -33,14 +15,15 @@ p {
     color: gray;
   }
 }
-/*
+
 h1,
 h2 {
   string-set: chapter content(text);
-}*/
+}
 
 /* screen only styles */
-@media screen, pagedjs-ignore {
+@media screen,
+pagedjs-ignore {
   .pagedjs_pages {
     display: flex;
     flex-direction: column;
@@ -78,6 +61,4 @@ h2 {
   background-color: lightskyblue;
 }
 
-.content {
-
-}
+.content {}

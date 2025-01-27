@@ -20,9 +20,8 @@ export default function Home() {
     <div className="App" ref={appRef}>
       <div className="two-column-layout">
         <section className="chapter" id="header">
-          <h1>This header is spans </h1>
-          <input name="search" type="search" placeholder="Search this document" />
-          <p>This is text in header.</p>
+          <h1>This header spans over two columns</h1>
+          <p>This is some text in header.</p>
         </section>
 
         <div className="content" id="content1">
@@ -40,7 +39,7 @@ export default function Home() {
         </div>
 
         <div className="content" id="content2">
-          <h2>Content 1 - Right Column</h2>
+          <h2>Content 2 - Right Column</h2>
           <p>1 At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.</p>
           <p>2 Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.</p>
           <p>3 Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet.</p>
